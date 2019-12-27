@@ -1,0 +1,24 @@
+DefaultPushButton {
+   background: #fff;
+   border: 1px solid #dcdfe6;
+   color: #606266;
+   text-align: center;
+   outline: none;
+   margin: 0;
+   font-weight: 500;
+   padding: 12px 20px;
+   font-size: 14px;
+   border-radius: 4px;
+}
+
+DefaultPushButton:hover {
+    color: #409eff;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+
+DefaultPushButton:pressed {
+    color: #3a8ee6;
+    border-color: #3a8ee6;
+    outline: none;
+}

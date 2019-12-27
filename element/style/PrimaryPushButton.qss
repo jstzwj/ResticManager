@@ -1,0 +1,25 @@
+PrimaryPushButton {
+    color: #ffffff;
+    background: #409eff;
+    border: 1px solid #409eff;
+
+    text-align: center;
+    outline: none;
+    margin: 0;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+PrimaryPushButton:hover {
+    background: #66b1ff;
+    border-color: #66b1ff;
+    color: #ffffff;
+}
+
+PrimaryPushButton:pressed {
+    background: #3a8ee6;
+    border-color: #3a8ee6;
+    color: #ffffff;
+}

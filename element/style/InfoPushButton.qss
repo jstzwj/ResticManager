@@ -1,0 +1,25 @@
+InfoPushButton {
+    color: #fff;
+    background-color: #909399;
+    border: 1px solid #909399;
+
+    text-align: center;
+    outline: none;
+    margin: 0;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+InfoPushButton:hover {
+    background: #a6a9ad;
+    border-color: #a6a9ad;
+    color: #fff;
+}
+
+InfoPushButton:pressed {
+    background: #82848a;
+    border-color: #82848a;
+    color: #fff;
+}
