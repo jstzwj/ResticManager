@@ -11,10 +11,13 @@ class OpenDialog(QtWidgets.QDialog):
         super().__init__(parent)
 
         self.setWindowTitle('Open a repository')
+        flags = QtCore.Qt.Dialog | QtCore.Qt.WindowCloseButtonHint
+        self.setWindowFlags(flags)
         
         self.text = Label("Open a repository")
         self.repo_position = FileEdit()
         self.password = LineEdit()
+        self.password.setEchoMode(QtWidgets.QLineEdit.Password)
         # self.password.setEnabled(False)
         self.button = PrimaryPushButton("open")
 
@@ -28,3 +31,5 @@ class OpenDialog(QtWidgets.QDialog):
         self.setLayout(self.layout)
 
         self.resize(400,140)
+
+    

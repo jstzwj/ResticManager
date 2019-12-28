@@ -6,6 +6,7 @@ from OpenDialog import OpenDialog
 
 from element.ElementStyles import styles
 
+app = None
 
 class MainWindow(QtWidgets.QWidget):
     def __init__(self):
@@ -17,8 +18,12 @@ class MainWindow(QtWidgets.QWidget):
 
     def open_repo(self):
         self.dialog = OpenDialog(self)
-        self.dialog.exec_()
+        if self.dialog.exec_() == QtWidgets.QDialog.Accepted:
+            pass
+        else:
+            pass
 
+        
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
